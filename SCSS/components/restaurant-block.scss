@@ -1,0 +1,39 @@
+
+.restaurant
+{
+	display: flex;
+	flex-direction: column;
+	height: 200px;
+	width: 100%;
+	color:red;
+	.restaurant img
+	{
+	height: 65%;
+	width: 100%;
+	}
+	&__footer
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		&__text
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			h3
+			{
+				font-size: 1em;
+				font-weight: bold;
+			}
+			.location
+			{
+				font-size: 1em;
+			}
+		}
+		.far.fa-heart
+		{
+			
+		}
+	}
+}

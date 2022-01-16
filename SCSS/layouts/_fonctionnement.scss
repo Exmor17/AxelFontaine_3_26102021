@@ -1,0 +1,28 @@
+.fonctionnement
+{
+	h2
+	{
+		text-align: left;
+	}
+	.phase-container
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		&__phase
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			&__icon-phase
+			{
+			color: #7e7e7e;
+			}
+			&__text-phase
+			{
+			color: black;
+			}
+		}
+	}
+}

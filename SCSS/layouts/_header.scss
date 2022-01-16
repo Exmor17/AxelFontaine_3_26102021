@@ -1,0 +1,21 @@
+header
+{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+	align-items: center;
+	text-align:center;
+	.place
+	{
+		background-color: #eaeaea;
+		color: #353535;
+	}
+	.restaurants-btn
+	{
+		background-color: #b160dc;
+		color: white;
+		border-radius: 40px;
+		padding: 5px;
+		width: 55%;
+	}
+}

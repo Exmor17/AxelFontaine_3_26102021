@@ -1,0 +1,20 @@
+@font-face
+{
+	font-family: 'Roboto';
+    src: url('roboto/Roboto-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Roboto' ;
+    src: url('roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+@font-face
+{
+	font-family: 'Shrikhand-Regular';
+	src: url('shrikhand-regular/Shrikhand-Regular.otf') format('opentype');
+}
+*
+{
+	font-family: Roboto, sans-serif;
+}

@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Shrikhand-Regular";
+  src: url("shrikhand-regular/Shrikhand-Regular.otf") format("opentype");
+}
+* {
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+header .place {
+  background-color: #eaeaea;
+  color: #353535;
+}
+header .restaurants-btn {
+  background-color: #b160dc;
+  color: white;
+  border-radius: 40px;
+  padding: 5px;
+  width: 55%;
+}
+
+.fonctionnement h2 {
+  text-align: left;
+}
+.fonctionnement .phase-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.fonctionnement .phase-container__phase {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.fonctionnement .phase-container__phase__icon-phase {
+  color: #7e7e7e;
+}
+.fonctionnement .phase-container__phase__text-phase {
+  color: black;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+}
+footer__nav {
+  list-style: none;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
+  color: red;
+}
+.restaurant .restaurant img {
+  height: 65%;
+  width: 100%;
+}
+.restaurant__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurant__footer__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.restaurant__footer__text h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+.restaurant__footer__text .location {
+  font-size: 1em;
+}
+
+/*# sourceMappingURL=main.css.map */
