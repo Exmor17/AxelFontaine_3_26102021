@@ -1,0 +1,19 @@
+{
+  "name": "axelfontaine_3_26102021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch SCSS/main.scss:SCSS/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Exmor17/AxelFontaine_3_26102021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Exmor17/AxelFontaine_3_26102021/issues"
+  },
+  "homepage": "https://github.com/Exmor17/AxelFontaine_3_26102021#readme"
+}
