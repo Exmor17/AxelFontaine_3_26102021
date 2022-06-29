@@ -12,10 +12,17 @@
             <img id="logo" src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood_logo"/>
         </nav>
         <header>
-            <div class="place"> Paris, Belleville </div>
-            <h1> Réservez le menu qui vous convient </h1>
-            <p> Découvrez des restaurants d'exception, sélectionnés par nos soins. </p>
-            <a class="restaurants-btn" href=#restaurants> Explorer nos restaurants </a>
+            <div class="place">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="place__text"> Paris, Belleville </p>
+            </div>
+            <div class="intro">
+                <h1> Réservez le menu qui vous convient </h1>
+                <p> Découvrez des restaurants d'exception, sélectionnés par nos soins. </p>
+                <a class="restaurants-btn" href=#restaurants>
+                    <p class="restaurants-btn__text"> Explorer nos restaurants </p>
+                </a>
+            </div>
         </header>
         <div class="content">
             <section class="fonctionnement">
@@ -23,30 +30,33 @@
                 <div class="phase-container">
                     <article class="phase">
                         <a class="phase__link">
-                            <div class="phase-icon"> </div>
-                            <p class="phase-text"> Choisissez un restaurant </p>
+                            <p class="phase__link__step"> 1 </p>
+                            <div class="phase__link__icon"><i class="fas fa-mobile-alt"></i></div>
+                            <p class="phase__link__text"> Choisissez un restaurant </p>
                         </a>
                     </article>
                     <article class="phase">
                         <a class="phase__link">
-                            <div class="phase-icon"> </div>
-                            <p class="phase-text"> Composez votre menu </p>
+                            <p class="phase__link__step"> 2 </p>
+                            <div class="phase__link__icon"><i class="fas fa-list-ul"></i></div>
+                            <p class="phase__link__text"> Composez votre menu </p>
                         </a>
                     </article>
                     <article class="phase">
                         <a class="phase__link">
-                            <div class="phase-icon"> </div>
-                            <p class="phase-text"> Dégustez au restaurant </p>
+                            <p class="phase__link__step"> 3 </p>
+                            <div class="phase__link__icon"><i class="fas fa-store"></i></div>
+                            <p class="phase__link__text"> Dégustez au restaurant </p>
                         </a>
                     </article>
                 </div>
             </section>
-            <section class="restaurants">
+            <section id="restaurants" class="restaurants">
                 <h2> Restaurants </h2>
                 <div class="restaurants-container">
                     <article class="restaurant">
-                        <a class="restaurant__link">
-                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/>
+                        <a href="la_palette_du_gout.html" class="restaurant__link">
+                            <img src="images/restaurants/la_palette_du_gout.jpg" alt="La palette du goût"/>
                             <div class="restaurant__footer">
                                 <div class="restaurant__footer__text">
                                     <h3> La palette du goût </h3>
@@ -57,8 +67,8 @@
                         </a>
                     </article>
                     <article class="restaurant">
-                        <a class="restaurant__link">
-                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"/>
+                        <a href="la_note_enchantee.html" class="restaurant__link">
+                            <img src="images/restaurants/la_note_enchantee.jpg" alt="La note enchantée"/>
                             <div class="restaurant__footer">
                                 <div class="restaurant__footer__text">
                                     <h3> La note enchantée </h3>
@@ -69,8 +79,8 @@
                         </a>
                     </article>
                     <article class="restaurant">
-                        <a class="restaurant__link">
-                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française"/>
+                        <a href="a_la_francaise.html" class="restaurant__link">
+                            <img src="images/restaurants/a_la_francaise.jpg" alt="À la française"/>
                             <div class="restaurant__footer">
                                 <div class="restaurant__footer__text">
                                     <h3> À la française </h3>
@@ -81,11 +91,11 @@
                         </a>
                     </article>
                     <article class="restaurant">
-                        <a class="restaurant__link">
-                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délices des sens"/>
+                        <a href="le_delice_des_sens.html" class="restaurant__link">
+                            <img src="images/restaurants/le_delice_des_sens.jpg" alt="Le délices des sens"/>
                             <div class="restaurant__footer">
                                 <div class="restaurant__footer__text">
-                                    <h3> Le délices des sens </h3>
+                                    <h3> Le délice des sens </h3>
                                     <p class="location"> Folie-Méricourt </p>
                                 </div>
                                 <i class="far fa-heart"></i>
@@ -98,8 +108,8 @@
         <footer class="footer">
             <div class="footer__logo" alt="footer_logo"> ohmyfood </div>
             <ul class="footer__nav">
-                <li><a href=#> Proposer un restaurant </a></li>
-                <li><a href=#> Devenir Partenaire </a></li>
+                <li><a href=#> <i class="fas fa-utensils"></i> Proposer un restaurant </a></li>
+                <li><a href=#> <i class="fas fa-hands-helping"></i> Devenir Partenaire </a></li>
                 <li><a href=#> Mentions légales </a></li>
                 <li><a href=#> Contact </a></li>
             </ul>

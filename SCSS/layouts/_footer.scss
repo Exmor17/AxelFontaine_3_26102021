@@ -2,18 +2,38 @@
 {	
 	background-color: #353535;
 	color: white;
-	padding: 50px;
+	padding: 35px;
 	&__logo
 	{
 		font-family: 'Shirkhand-Regular';
-		font-size: 3.5em;
+		font-size: 1.4em;
 	}
 	&__nav
 	{
-		font-size: 2.5em;
-		color: white;
-		font-style: normal;
+		font-size: 1em;
 		list-style: none;
 		padding: 0;
+		li
+		{
+			margin: 10px 0;
+		}
+		li a // possible ?
+		{
+			color: white;
+			font-style: normal;
+			text-decoration: none;
+		}
+		i
+		{
+			padding-right: 7px;
+		}
+	}
+	@media screen and (min-width: 900px)
+	{
+		padding-left: 50px;
+	}
+	@media screen and (min-width: 1100px)
+	{
+		padding-left: 75px;
 	}
 }

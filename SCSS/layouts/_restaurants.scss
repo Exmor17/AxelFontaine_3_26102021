@@ -1,11 +1,14 @@
 .restaurants
 {
 	background-color: #f6f6f6;
+	padding: 60px 0;
+	width: 100%;
 	h2
 	{
 		text-align: left;
 		width: 90%;
 		margin: auto;
+		padding-bottom: 10px;
 	}
 	.restaurants-container
 	{
@@ -15,4 +18,17 @@
 		justify-content: space-around;
 		align-items: center;
 	}
+	@media screen and (min-width: 615px)
+	{
+		.restaurants-container
+		{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		}
+	}
 }
+

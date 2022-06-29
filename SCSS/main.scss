@@ -2,12 +2,17 @@
 
 @import "./base/font";
 @import "./base/standard";
+@import "./layouts/nav";
 @import "./layouts/header";
 @import "./layouts/fonctionnement";
 @import "./layouts/restaurants";
 @import "./layouts/footer";
+@import "./layouts/restaurant-header";
+@import "./layouts/meals";
 @import "./components/restaurant-block";
 @import "./components/phase-block";
+@import "./components/meal";
+@import "./components/order-button";
 
 
 

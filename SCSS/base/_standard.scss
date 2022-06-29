@@ -8,5 +8,9 @@ body
 }
 h1, h2
 {
-    font-size: 2.6em;
+    font-size: 1.6em;
+    @media screen and (min-width: 1350px)
+	{
+        font-size: 3em;
+    }
 }

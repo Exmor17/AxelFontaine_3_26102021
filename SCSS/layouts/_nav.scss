@@ -1,0 +1,29 @@
+nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 35px 10px 35px;
+    box-shadow: 0px 15px 45px #cfcfcf;
+    .back-icon
+    {
+        color: black;
+        font-size: 1.6em;
+        justify-self: flex-start;
+    }
+    img
+    {
+        justify-self: center;
+        height: 42px;
+    }
+    @media screen and (min-width: 1350px)
+    {
+        padding: 45px 0 45px 0;
+        img
+        {
+            height: 125px;
+            width: 35%
+        }
+    }
+}
