@@ -1,5 +1,7 @@
 
 
+@import "./base/loading";
+@import "./base/animations";
 @import "./base/font";
 @import "./base/standard";
 @import "./layouts/nav";
@@ -11,8 +13,9 @@
 @import "./layouts/meals";
 @import "./components/restaurant-block";
 @import "./components/phase-block";
-@import "./components/meal";
+@import "./components/meal-block";
 @import "./components/order-button";
+@import "./components/like-button.scss";
 
 
 

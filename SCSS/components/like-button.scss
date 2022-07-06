@@ -1,0 +1,26 @@
+.like-button
+{
+    .far.fa-heart
+    {
+        color: black;
+        font-size: 1.5em;
+        &:hover
+        {
+           display: none;
+        }
+        &:hover
+        {
+            +.fas.fa-heart
+            {
+                opacity: 1;
+            }
+        }   
+    }
+    .fas.fa-heart
+    {
+        color: #FF79DA;
+        opacity: 0;
+        transition: opacity 1500ms;
+        font-size: 1.5em;
+    }
+}

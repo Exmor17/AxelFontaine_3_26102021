@@ -8,11 +8,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head> 
     <body>
+        <div class="loading-spinner">
+            <div class="loading-spinner__outer">
+                <div class="loading-spinner__outer__inner">
+                    <div class="loading-spinner__outer__inner__point"></div>
+                </div>
+            </div>
+        </div>
         <nav>
-            <a class="back-icon" href="home.html">
-                <i class="fas fa-arrow-left"></i>
-            </a>
+            <a class="back-icon" href="home.html"><i class="fas fa-arrow-left"></i></a>
             <img id="logo" src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood_logo"/>
+            <div class="forward-icon"></div>
         </nav>
         <header class="restaurant__header">
             <img class="restaurant__header__picture" src="images/restaurants/a_la_francaise.jpg" alt="À la Française" />
@@ -20,7 +26,10 @@
         <div class="content">
             <div class="restaurant__title">
                 <h2> À la française </h2>
-                <i class="far fa-heart"></i>
+                <div class="like-button">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
             </div>
             <section class="meals">
                 <div class="meals__category">

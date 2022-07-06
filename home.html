@@ -8,6 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head> 
     <body>
+        <div class="loading-spinner">
+            <div class="loading-spinner__outer">
+                <div class="loading-spinner__outer__inner">
+                    <div class="loading-spinner__outer__inner__point"></div>
+                </div>
+            </div>
+        </div>
         <nav>
             <img id="logo" src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood_logo"/>
         </nav>
@@ -24,26 +31,26 @@
                 </a>
             </div>
         </header>
-        <div class="content">
+        <div class="home__content">
             <section class="fonctionnement">
                 <h2> Fonctionnement </h2>
                 <div class="phase-container">
                     <article class="phase">
-                        <a class="phase__link">
+                        <a class="phase__link" href=#>
                             <p class="phase__link__step"> 1 </p>
                             <div class="phase__link__icon"><i class="fas fa-mobile-alt"></i></div>
                             <p class="phase__link__text"> Choisissez un restaurant </p>
                         </a>
                     </article>
                     <article class="phase">
-                        <a class="phase__link">
+                        <a class="phase__link" href=#>
                             <p class="phase__link__step"> 2 </p>
                             <div class="phase__link__icon"><i class="fas fa-list-ul"></i></div>
                             <p class="phase__link__text"> Composez votre menu </p>
                         </a>
                     </article>
                     <article class="phase">
-                        <a class="phase__link">
+                        <a class="phase__link" href=#>
                             <p class="phase__link__step"> 3 </p>
                             <div class="phase__link__icon"><i class="fas fa-store"></i></div>
                             <p class="phase__link__text"> Dégustez au restaurant </p>
@@ -56,49 +63,63 @@
                 <div class="restaurants-container">
                     <article class="restaurant">
                         <a href="la_palette_du_gout.html" class="restaurant__link">
+                            <div class="new"> Nouveau </div>
                             <img src="images/restaurants/la_palette_du_gout.jpg" alt="La palette du goût"/>
-                            <div class="restaurant__footer">
-                                <div class="restaurant__footer__text">
+                            <div class="restaurant__link__footer">
+                                <div class="restaurant__link__footer__text">
                                     <h3> La palette du goût </h3>
                                     <p class="location"> Ménilmontant </p>
                                 </div>
-                                <i class="far fa-heart"></i>
+                                <div class="like-button home">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-heart"></i>
+                                </div>
                             </div>
                         </a>
                     </article>
                     <article class="restaurant">
                         <a href="la_note_enchantee.html" class="restaurant__link">
+                            <div class="new"> Nouveau </div>
                             <img src="images/restaurants/la_note_enchantee.jpg" alt="La note enchantée"/>
-                            <div class="restaurant__footer">
-                                <div class="restaurant__footer__text">
+                            <div class="restaurant__link__footer">
+                                <div class="restaurant__link__footer__text">
                                     <h3> La note enchantée </h3>
                                     <p class="location"> Charonne </p>
                                 </div>
-                                <i class="far fa-heart"></i>
+                                <div class="like-button home">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-heart"></i>
+                                </div>
                             </div>
                         </a>
                     </article>
                     <article class="restaurant">
                         <a href="a_la_francaise.html" class="restaurant__link">
                             <img src="images/restaurants/a_la_francaise.jpg" alt="À la française"/>
-                            <div class="restaurant__footer">
-                                <div class="restaurant__footer__text">
+                            <div class="restaurant__link__footer">
+                                <div class="restaurant__link__footer__text">
                                     <h3> À la française </h3>
                                     <p class="location"> Cité Rouge </p>
                                 </div>
-                                <i class="far fa-heart"></i>
+                                <div class="like-button home">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-heart"></i>
+                                </div>
                             </div>
                         </a>
                     </article>
                     <article class="restaurant">
                         <a href="le_delice_des_sens.html" class="restaurant__link">
                             <img src="images/restaurants/le_delice_des_sens.jpg" alt="Le délices des sens"/>
-                            <div class="restaurant__footer">
-                                <div class="restaurant__footer__text">
+                            <div class="restaurant__link__footer">
+                                <div class="restaurant__link__footer__text">
                                     <h3> Le délice des sens </h3>
                                     <p class="location"> Folie-Méricourt </p>
                                 </div>
-                                <i class="far fa-heart"></i>
+                                <div class="like-button home">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-heart"></i>
+                                </div>
                             </div>
                         </a>
                     </article>

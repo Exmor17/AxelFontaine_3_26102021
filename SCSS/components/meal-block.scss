@@ -16,9 +16,19 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		&:hover
+		{
+			.meal__check
+			{
+				transform: scaleX(1);
+				.fas.fa-check-circle
+				{
+					transform: rotate(0deg);
+				}
+			}
+		}
 		.meal__infos
 		{
-			
 			padding: 8px 12px;
 			height: 70px;
 			display: flex;
@@ -51,6 +61,9 @@
 			background: #99E2D0;
 			height: 100%;
 			width: 80px;
+			transform: scaleX(0);
+			transform-origin: 100% 50%;
+			transition: transform 350ms ease-in-out;
 			display: flex;
 			flex-shrink: 0;
 			flex-direction: column;
@@ -59,6 +72,8 @@
 			i
 			{
 				color: white;
+				transform: rotate(90deg);
+				transition: transform 350ms;
 			}
 		}	
     }

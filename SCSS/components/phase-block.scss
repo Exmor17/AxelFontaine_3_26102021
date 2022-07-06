@@ -7,6 +7,7 @@
 	margin: 15px 0;
 	&__link
 	{
+		text-decoration: none;
 		border-radius: 28px;
 		overflow: hidden;
 		box-shadow: 0px 0px 25px -8px #000000;
@@ -16,6 +17,14 @@
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
+		&:hover
+		{
+			background-color: #f5edff;
+			.phase__link__icon
+			{
+				color: #9356DC;
+			}
+		}
 		&__step
 		{
 			color: white;
@@ -34,12 +43,16 @@
 		{
 			color: #7e7e7e;
 			font-size: 1.4em;
-			margin-left: 30px;
+			text-align: center;
+			margin-left: 25px;
+			width: 30px;
 		}
 		&__text
 		{
+			color: black;
 			font-size: 1em;
 			font-weight: bold;
+			text-decoration: none;
 			margin-left: 30px;
 		}
 	}
