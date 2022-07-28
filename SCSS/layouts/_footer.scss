@@ -15,7 +15,14 @@
 		padding: 0;
 		li
 		{
+			transform: translateX(0);
+			transform-origin: right;
+			transition: transform 250ms ease-out;
 			margin: 10px 0;
+			&:hover
+			{
+				transform: translateX(10px);
+			}
 		}
 		li a // possible ?
 		{

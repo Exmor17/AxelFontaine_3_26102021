@@ -53,3 +53,16 @@
         transform: translateY(0px)
     }
 }
+@keyframes hr-growing
+{
+    0%
+    {
+        transform-origin: left;
+        transform: scale(0);
+    }
+    100%
+    {
+        transform-origin: left;
+        transform: scale(1);
+    }
+}

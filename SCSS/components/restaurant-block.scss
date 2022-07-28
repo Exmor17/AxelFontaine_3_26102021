@@ -1,8 +1,15 @@
 .restaurant
 {
+	transform-origin: bottom;
+	transform: translateY(0);
+	transition: transform 250ms ease-out;
+	margin: 10px 0;
 	height: auto;
 	width: 90%;
-	margin: 10px 0;
+	&:hover
+	{
+		transform: translateY(15px);
+	}
 	&__link
 	{
 		color: black;

@@ -2,13 +2,15 @@
 {
     background-image: linear-gradient(to top left, #9356DC, #FF79DA);
     color: white;
+    opacity: 1;
     font-size: 1.1em;
     font-style: normal;
     text-decoration: none;
     border-radius: 100px;
     border: none;
     box-shadow: 0px 10px 15px #cfcfcf;
-    animation: meals-entrance 1000ms 3650ms both;
+    animation: meals-entrance 1000ms 3650ms backwards;
+    transform: scale(1);
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -20,12 +22,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: opacity 250ms;
+    transition: transform opacity 250ms;
     &:hover
     {
-       opacity: 0.7;
+       opacity: 0.85;
        box-shadow: 0px 10px 15px #8b8a8a;
+       &:active
+        {
+            transform: scale(0.98); // à l'extérieur de hover, différence ?
+        }
     }
+    
     /*&::after
     {  
         content: "";

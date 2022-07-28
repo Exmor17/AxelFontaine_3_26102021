@@ -6,13 +6,15 @@
 	overflow: hidden;
 	box-shadow: 0px 0px 25px -8px #000000;
 	margin: 7px 0;
-	height: 85px;
+	height: 82px;
 	width: 100%;
 	&__link
     {
 		height: 100%;
 		width: 100%;
 		display: flex;
+		flex-shrink: 1;
+		flex-grow: 0;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
@@ -20,7 +22,7 @@
 		{
 			.meal__check
 			{
-				transform: scaleX(1);
+				width: 80px;
 				.fas.fa-check-circle
 				{
 					transform: rotate(0deg);
@@ -29,30 +31,55 @@
 		}
 		.meal__infos
 		{
-			padding: 8px 12px;
-			height: 70px;
+			padding: 10px 12px 10px 12px;
+			height: 100%;
+			width: 100%;
 			display: flex;
+			flex-shrink: 1;
+			flex-grow: 1;
 			flex-direction: column;
 			justify-content: space-between;
 			align-items: flex-start;
 			h3
 			{
 				text-overflow: ellipsis;
+				text-overflow: "...";
+				white-space: nowrap;
+				display: block;
+				overflow: hidden;
+				flex-shrink: 1;
+				flex-grow: 1;
 				margin: 0;
+				line-height: 30px;
+				height: 30px;
+				width: 100%;
 			}
 			&__details
 			{
+				height: 30px;
+				width: 100%;
 				display: flex;
+				flex-shrink: 1;
+				flex-grow: 1;
 				flex-direction: row;
 				justify-content: space-between;
 				p
 				{
-					text-overflow:ellipsis;
+					text-overflow: ellipsis;
+					text-overflow: "...";
+					white-space: nowrap;
+					display: block;
+					flex-shrink: 1;
+					flex-grow: 1;
+					overflow: hidden;
 					margin: 0;
+					height: 30px;
+					line-height: 30px;
 				}
 				&__price
 				{
 					font-weight: bold;
+					padding: 0 10px;
 				}
 			}
 		}
@@ -60,10 +87,8 @@
 		{
 			background: #99E2D0;
 			height: 100%;
-			width: 80px;
-			transform: scaleX(0);
-			transform-origin: 100% 50%;
-			transition: transform 350ms ease-in-out;
+			width: 0;
+			transition: width 350ms ease-in-out;
 			display: flex;
 			flex-shrink: 0;
 			flex-direction: column;

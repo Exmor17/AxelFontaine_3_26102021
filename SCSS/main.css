@@ -84,6 +84,16 @@
     transform: translateY(0px);
   }
 }
+@keyframes hr-growing {
+  0% {
+    transform-origin: left;
+    transform: scale(0);
+  }
+  100% {
+    transform-origin: left;
+    transform: scale(1);
+  }
+}
 @font-face {
   font-family: "Roboto";
   src: url("../roboto/Roboto-Regular.ttf") format("truetype");
@@ -199,10 +209,15 @@ header .intro .restaurants-btn {
   padding: 5px;
   height: 60px;
   width: 70%;
+  transform: scale(1);
+  transition: transform opacity 250ms;
 }
 header .intro .restaurants-btn:hover {
-  opacity: 0.7;
+  opacity: 0.85;
   box-shadow: 0px 10px 15px #8b8a8a;
+}
+header .intro .restaurants-btn:hover:active {
+  transform: scale(0.98);
 }
 header .intro .restaurants-btn__text {
   font-size: 1.1em;
@@ -311,7 +326,13 @@ header .intro .restaurants-btn__text {
   padding: 0;
 }
 .footer__nav li {
+  transform: translateX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-out;
   margin: 10px 0;
+}
+.footer__nav li:hover {
+  transform: translateX(10px);
 }
 .footer__nav li a {
   color: white;
@@ -383,18 +404,12 @@ header .intro .restaurants-btn__text {
 }
 .content .meals__category {
   margin: 0 0 30px 0;
-  width: 100%;
+  width: 33.33%;
   animation: meals-entrance 1000ms 2650ms both;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-.content .meals__category h2 {
-  font-size: 1.2em;
-  font-weight: normal;
-  margin: 10px 0;
-  width: 100%;
 }
 @media screen and (min-width: 1100px) {
   .content .meals__category {
@@ -402,12 +417,19 @@ header .intro .restaurants-btn__text {
     margin: 7px 15px;
   }
 }
+.content .meals__category h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin: 10px 0;
+  width: 100%;
+}
 .content .meals__category hr {
   background-color: #99E2D0;
   border: none;
   margin: 0 0 10px 0;
+  animation: hr-growing 350ms 3650ms backwards;
   height: 5px;
-  width: 50px;
+  width: 70px;
   align-self: flex-start;
 }
 @media screen and (min-width: 900px) {
@@ -418,14 +440,21 @@ header .intro .restaurants-btn__text {
 @media screen and (min-width: 1100px) {
   .content .meals {
     flex-direction: row;
+    align-items: flex-start;
     width: 92%;
   }
 }
 
 .restaurant {
+  transform-origin: bottom;
+  transform: translateY(0);
+  transition: transform 250ms ease-out;
+  margin: 10px 0;
   height: auto;
   width: 90%;
-  margin: 10px 0;
+}
+.restaurant:hover {
+  transform: translateY(15px);
 }
 .restaurant__link {
   color: black;
@@ -585,54 +614,79 @@ header .intro .restaurants-btn__text {
   overflow: hidden;
   box-shadow: 0px 0px 25px -8px #000000;
   margin: 7px 0;
-  height: 85px;
+  height: 82px;
   width: 100%;
 }
 .meal__link {
   height: 100%;
   width: 100%;
   display: flex;
+  flex-shrink: 1;
+  flex-grow: 0;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 .meal__link:hover .meal__check {
-  transform: scaleX(1);
+  width: 80px;
 }
 .meal__link:hover .meal__check .fas.fa-check-circle {
   transform: rotate(0deg);
 }
 .meal__link .meal__infos {
-  padding: 8px 12px;
-  height: 70px;
+  padding: 10px 12px 10px 12px;
+  height: 100%;
+  width: 100%;
   display: flex;
+  flex-shrink: 1;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
 .meal__link .meal__infos h3 {
   text-overflow: ellipsis;
+  text-overflow: "...";
+  white-space: nowrap;
+  display: block;
+  overflow: hidden;
+  flex-shrink: 1;
+  flex-grow: 1;
   margin: 0;
+  line-height: 30px;
+  height: 30px;
+  width: 100%;
 }
 .meal__link .meal__infos__details {
+  height: 30px;
+  width: 100%;
   display: flex;
+  flex-shrink: 1;
+  flex-grow: 1;
   flex-direction: row;
   justify-content: space-between;
 }
 .meal__link .meal__infos__details p {
   text-overflow: ellipsis;
+  text-overflow: "...";
+  white-space: nowrap;
+  display: block;
+  flex-shrink: 1;
+  flex-grow: 1;
+  overflow: hidden;
   margin: 0;
+  height: 30px;
+  line-height: 30px;
 }
 .meal__link .meal__infos__details__price {
   font-weight: bold;
+  padding: 0 10px;
 }
 .meal__link .meal__check {
   background: #99E2D0;
   height: 100%;
-  width: 80px;
-  transform: scaleX(0);
-  transform-origin: 100% 50%;
-  transition: transform 350ms ease-in-out;
+  width: 0;
+  transition: width 350ms ease-in-out;
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
@@ -648,13 +702,15 @@ header .intro .restaurants-btn__text {
 #order_now {
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
   color: white;
+  opacity: 1;
   font-size: 1.1em;
   font-style: normal;
   text-decoration: none;
   border-radius: 100px;
   border: none;
   box-shadow: 0px 10px 15px #cfcfcf;
-  animation: meals-entrance 1000ms 3650ms both;
+  animation: meals-entrance 1000ms 3650ms backwards;
+  transform: scale(1);
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -666,7 +722,7 @@ header .intro .restaurants-btn__text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: opacity 250ms;
+  transition: transform opacity 250ms;
   /*&::after
   {  
       content: "";
@@ -683,8 +739,11 @@ header .intro .restaurants-btn__text {
   */
 }
 #order_now:hover {
-  opacity: 0.7;
+  opacity: 0.85;
   box-shadow: 0px 10px 15px #8b8a8a;
+}
+#order_now:hover:active {
+  transform: scale(0.98);
 }
 @media screen and (min-width: 900px) {
   #order_now {
@@ -697,19 +756,30 @@ header .intro .restaurants-btn__text {
   }
 }
 
+.like-button {
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+.like-button:hover .far.fa-heart {
+  opacity: 0;
+}
+.like-button:hover .far.fa-heart + .fas.fa-heart {
+  opacity: 1;
+}
 .like-button .far.fa-heart {
   color: black;
   font-size: 1.5em;
-}
-.like-button .far.fa-heart:hover {
-  display: none;
-}
-.like-button .far.fa-heart:hover + .fas.fa-heart {
-  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .like-button .fas.fa-heart {
   color: #FF79DA;
   opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
   transition: opacity 1500ms;
   font-size: 1.5em;
 }
