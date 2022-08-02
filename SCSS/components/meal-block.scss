@@ -20,6 +20,10 @@
 		align-items: center;
 		&:hover
 		{
+			.meal__infos
+			{
+				width: calc(100% - 80px);
+			}
 			.meal__check
 			{
 				width: 80px;
@@ -28,6 +32,7 @@
 					transform: rotate(0deg);
 				}
 			}
+
 		}
 		.meal__infos
 		{
@@ -47,8 +52,6 @@
 				white-space: nowrap;
 				display: block;
 				overflow: hidden;
-				flex-shrink: 1;
-				flex-grow: 1;
 				margin: 0;
 				line-height: 30px;
 				height: 30px;
@@ -59,18 +62,14 @@
 				height: 30px;
 				width: 100%;
 				display: flex;
-				flex-shrink: 1;
-				flex-grow: 1;
 				flex-direction: row;
 				justify-content: space-between;
-				p
+				&__ingredients
 				{
 					text-overflow: ellipsis;
 					text-overflow: "...";
 					white-space: nowrap;
 					display: block;
-					flex-shrink: 1;
-					flex-grow: 1;
 					overflow: hidden;
 					margin: 0;
 					height: 30px;
@@ -79,6 +78,9 @@
 				&__price
 				{
 					font-weight: bold;
+					line-height: 30px;
+					height: 30px;
+					margin: 0;
 					padding: 0 10px;
 				}
 			}

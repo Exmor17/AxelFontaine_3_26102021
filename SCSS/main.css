@@ -404,8 +404,7 @@ header .intro .restaurants-btn__text {
 }
 .content .meals__category {
   margin: 0 0 30px 0;
-  width: 33.33%;
-  animation: meals-entrance 1000ms 2650ms both;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -413,7 +412,7 @@ header .intro .restaurants-btn__text {
 }
 @media screen and (min-width: 1100px) {
   .content .meals__category {
-    width: 100%;
+    width: 33.33%;
     margin: 7px 15px;
   }
 }
@@ -431,6 +430,15 @@ header .intro .restaurants-btn__text {
   height: 5px;
   width: 70px;
   align-self: flex-start;
+}
+.content .meals__category:nth-child(1) {
+  animation: meals-entrance 1000ms 2650ms both;
+}
+.content .meals__category:nth-child(2) {
+  animation: meals-entrance 1000ms 2850ms both;
+}
+.content .meals__category:nth-child(3) {
+  animation: meals-entrance 1000ms 3050ms both;
 }
 @media screen and (min-width: 900px) {
   .content .meals {
@@ -505,7 +513,7 @@ header .intro .restaurants-btn__text {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 4px 24px 4px 10px;
+  padding: 10px 24px 10px 10px;
   height: auto;
   width: 100%;
 }
@@ -514,12 +522,10 @@ header .intro .restaurants-btn__text {
   flex-direction: column;
   justify-content: space-between;
 }
-.restaurant__link__footer__text h3, .restaurant__link__footer__text .location {
-  margin: 6px 0;
-}
 .restaurant__link__footer__text h3 {
   font-size: 1.1em;
   font-weight: bold;
+  margin: 0 0 3px 0;
 }
 @media screen and (min-width: 1350px) {
   .restaurant__link__footer__text h3 {
@@ -529,6 +535,7 @@ header .intro .restaurants-btn__text {
 }
 .restaurant__link__footer__text .location {
   font-size: 1em;
+  margin: 3px 0 0 0;
 }
 @media screen and (min-width: 1350px) {
   .restaurant__link__footer__text .location {
@@ -627,6 +634,9 @@ header .intro .restaurants-btn__text {
   justify-content: space-between;
   align-items: center;
 }
+.meal__link:hover .meal__infos {
+  width: calc(100% - 80px);
+}
 .meal__link:hover .meal__check {
   width: 80px;
 }
@@ -650,8 +660,6 @@ header .intro .restaurants-btn__text {
   white-space: nowrap;
   display: block;
   overflow: hidden;
-  flex-shrink: 1;
-  flex-grow: 1;
   margin: 0;
   line-height: 30px;
   height: 30px;
@@ -661,18 +669,14 @@ header .intro .restaurants-btn__text {
   height: 30px;
   width: 100%;
   display: flex;
-  flex-shrink: 1;
-  flex-grow: 1;
   flex-direction: row;
   justify-content: space-between;
 }
-.meal__link .meal__infos__details p {
+.meal__link .meal__infos__details__ingredients {
   text-overflow: ellipsis;
   text-overflow: "...";
   white-space: nowrap;
   display: block;
-  flex-shrink: 1;
-  flex-grow: 1;
   overflow: hidden;
   margin: 0;
   height: 30px;
@@ -680,6 +684,9 @@ header .intro .restaurants-btn__text {
 }
 .meal__link .meal__infos__details__price {
   font-weight: bold;
+  line-height: 30px;
+  height: 30px;
+  margin: 0;
   padding: 0 10px;
 }
 .meal__link .meal__check {
@@ -757,8 +764,8 @@ header .intro .restaurants-btn__text {
 }
 
 .like-button {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   position: relative;
 }
 .like-button:hover .far.fa-heart {
@@ -769,7 +776,7 @@ header .intro .restaurants-btn__text {
 }
 .like-button .far.fa-heart {
   color: black;
-  font-size: 1.5em;
+  font-size: 20px;
   position: absolute;
   top: 0;
   left: 0;
@@ -781,7 +788,7 @@ header .intro .restaurants-btn__text {
   top: 0;
   left: 0;
   transition: opacity 1500ms;
-  font-size: 1.5em;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,7 @@
 .like-button
 {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     position: relative;
     &:hover
     {
@@ -17,7 +17,7 @@
     .far.fa-heart
     {
         color: black;
-        font-size: 1.5em;
+        font-size: 20px;
         position: absolute;
         top: 0;
         left: 0;
@@ -30,6 +30,6 @@
         top: 0;
         left: 0;
         transition: opacity 1500ms;
-        font-size: 1.5em;
+        font-size: 20px;
     }
 }
