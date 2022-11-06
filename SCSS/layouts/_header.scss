@@ -51,7 +51,7 @@ header
 			height: 60px;
 			width: 70%;
 			transform: scale(1);
-			transition: transform opacity 250ms;
+			transition: opacity 250ms;
 			&:hover
 			{
 				opacity: 0.85;

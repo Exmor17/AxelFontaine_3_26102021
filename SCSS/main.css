@@ -207,7 +207,7 @@ header .intro .restaurants-btn {
   height: 60px;
   width: 70%;
   transform: scale(1);
-  transition: transform opacity 250ms;
+  transition: opacity 250ms;
 }
 header .intro .restaurants-btn:hover {
   opacity: 0.85;
@@ -655,7 +655,6 @@ header .intro .restaurants-btn__text {
 }
 .meal__link .meal__infos h3 {
   text-overflow: ellipsis;
-  text-overflow: "...";
   white-space: nowrap;
   display: block;
   overflow: hidden;
@@ -674,7 +673,6 @@ header .intro .restaurants-btn__text {
 }
 .meal__link .meal__infos__details__ingredients {
   text-overflow: ellipsis;
-  text-overflow: "...";
   white-space: nowrap;
   display: block;
   overflow: hidden;
@@ -729,7 +727,7 @@ header .intro .restaurants-btn__text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform opacity 250ms;
+  transition: opacity 250ms;
   /*&::after
   {  
       content: "";

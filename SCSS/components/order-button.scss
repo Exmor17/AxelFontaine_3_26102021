@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: transform opacity 250ms;
+    transition: opacity 250ms;
     &:hover
     {
        opacity: 0.85;
